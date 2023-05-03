@@ -1,72 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Activity2">
+    android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/textView"
+    <CheckBox
+        android:id="@+id/pizza"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Activity 2"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.331" />
-
-    <RadioButton
-        android:id="@+id/male_btn"
+        android:text="Pizza"
+        android:textSize="40dp"
+        />
+    <CheckBox
+        android:id="@+id/coffee"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="84dp"
-        android:layout_marginTop="332dp"
-        android:text="Male"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <RadioButton
-        android:id="@+id/female_btn"
+        android:text="Coffe"
+        android:textSize="40dp"
+        />
+    <CheckBox
+        android:id="@+id/icecream"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="332dp"
-        android:layout_marginEnd="80dp"
-        android:text="Female"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
+        android:text="IceCream"
+        android:textSize="40dp"
+        />
     <Button
-        android:id="@+id/back_btn"
+        android:id="@+id/order_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Back"
-        app:layout_constraintBottom_toTopOf="@+id/textView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <CheckBox
-        android:id="@+id/checkBox_male"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="96dp"
-        android:text="Male"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/male_btn"
-        app:layout_constraintVertical_bias="0.303" />
-
-    <CheckBox
-        android:id="@+id/checkBox_female"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="80dp"
-        android:text="Female"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/female_btn"
-        app:layout_constraintVertical_bias="0.303" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:text="Order"
+        android:textSize="40dp"
+        android:layout_gravity="center"
+        />
+</LinearLayout>
